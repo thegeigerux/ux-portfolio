@@ -24,10 +24,10 @@ function App() {
       <AuthProvider>
         <Router>
           <ScrollToTop />
-          <div className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-white transition-colors duration-300 relative">
+          <div className="min-h-screen bg-black text-white transition-colors duration-300 relative">
             {/* Ultra-simple static background */}
-            <div className="fixed inset-0 bg-white dark:bg-black"></div>
-            <div className="fixed inset-0 bg-gradient-to-br from-blue-50/40 via-purple-50/20 to-pink-50/30 dark:from-slate-900/10 dark:to-purple-900/5 pointer-events-none"></div>
+            <div className="fixed inset-0 bg-black"></div>
+            <div className="fixed inset-0 bg-gradient-to-br from-slate-900/10 to-purple-900/5 pointer-events-none"></div>
             <Navigation />
             <main className="relative z-10">
               <Routes>
