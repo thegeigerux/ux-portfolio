@@ -1,6 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        if (
+          savedTheme === "dark" ||
+          (!savedTheme &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      } catch (e) {}
+    </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,7 +35,16 @@
   </head>
   <body>
     <div id="root">
-      <div style="display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #0f172a; color: white;">
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          background: #0f172a;
+          color: white;
+        "
+      >
         <div>Loading...</div>
       </div>
     </div>
