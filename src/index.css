@@ -816,3 +816,10 @@
     #06b6d4
   );
 }
+
+/* Ensure base styles are dark by default */
+body,
+html {
+  background: #0f172a !important;
+  color: #fff !important;
+}
